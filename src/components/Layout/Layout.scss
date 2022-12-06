@@ -1,3 +1,11 @@
 nav {
   width: 10vw;
+  min-width: 150px;
+}
+
+li {
+  @apply p-0 w-full;
+  a {
+    @apply hover:bg-slate-900 m-0 block w-full h-full text-center font-mono font-bold text-lg p-4;
+  }
 }

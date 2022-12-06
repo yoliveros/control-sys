@@ -4,17 +4,17 @@ import './Layout.scss'
 
 function Layout(): JSX.Element {
   return (
-    <section className="flex gap-4 ">
+    <section className="flex gap-4">
       <nav className="bg-slate-600">
-        <ul className="h-screen flex flex-col gap-4 items-center p-4 text-white group group-hover:text-black">
-          <li className="hover:text-slate-900">
+        <ul className="h-screen flex flex-col items-center text-white">
+          <li>
             <Link to="/">Inicio</Link>
           </li>
-          <li className="hover:text-slate-900">
-            <Link to="/">Compras</Link>
+          <li>
+            <Link to="/compras">Compras</Link>
           </li>
-          <li className="hover:text-slate-900">
-            <Link to="/">Reportes</Link>
+          <li>
+            <Link to="/reportes">Reportes</Link>
           </li>
           <li className="mt-auto">
             <a href="#" onClick={() => invoke('close_window')}>
